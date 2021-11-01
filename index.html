@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta http-quiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rock Paper Scissors</title>
+    <meta name="author" content="Lan Ngo">
+    <meta name="description" content="A simple rock, paper, scissors 
+        game between human and computer.">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <script src="js/play.js"></script>
+    <div class="container">
+        <h1>Rock, Paper, Scissors?</h1>
+
+        <h3>First to 5 wins!</h3>
+
+        <div class="game-container">                  
+            <div class="player-containter human">
+                <div>
+                    <h3 class="human-score">PLAYER SCORE: 0</h3>
+                </div>
+
+                <div class="selection-container">
+                    <div class="selection rock">
+                        <p class="rock">Rock</p>
+                        <img class="selection-img rock" src="images/rock.jpg">
+                    </div>
+                    <div class="selection paper">
+                        <p class="paper">Paper</p>
+                        <img class="selection-img paper" src="images/paper.jpg">
+                    </div>
+                    <div class="selection scissors">
+                        <p class="scissors">Scissors</p>
+                        <img class="selection-img scissors" 
+                            src="images/scissors.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-containter computer">
+                <div>
+                    <h3 class="computer-score">COMPUTER SCORE: 0</h3>
+                </div>
+
+                <div class="selection-container">
+                    <div class="selection rock">
+                        <p class="rock">Rock</p>
+                        <img class="selection-img" src="images/rock.jpg">
+                    </div>
+                    <div class="selection paper">
+                        <p class="paper">Paper</p>
+                        <img class="selection-img" src="images/paper.jpg">
+                    </div>
+                    <div class="selection scissors">
+                        <p class="scissors">Scissors</p>
+                        <img class="selection-img" src="images/scissors.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <h3 class="output"></h3>
+        
+        <div class="endgame-container">
+            <div class="endgame-content">
+                <p class="end-message"></p>
+                <p class="restart-message">Would you like to try again?</p>
+                <button class="btn-restart">Restart</button>
+            </div>
+        </div>     
+    </div>
+
+    <footer class="footer">
+        <p>Made by: Lan Ngo &nbsp;</p>
+        <a href="https://github.com/lanngo27" target="_blank">
+            <i class="fa fa-github" style="font-size:24px"></i>
+        </a>
+    </footer>
 </body>
 </html>
